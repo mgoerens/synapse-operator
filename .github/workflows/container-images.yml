@@ -2,7 +2,7 @@ name: Build and push container images on Quay.io
 
 on:
   push:
-    branches: [ master ]
+    branches: [ "master" ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
 
