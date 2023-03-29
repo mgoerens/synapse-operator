@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.QUAY_ROBOT_TOKEN }}
 
       - name: Build and Push controller image
-        run: make build && make push
+        run: make docker-build && make docker-push
 
       - name: Build and Push controller image
         run: make bundle-build && make bundle-push
